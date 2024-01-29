@@ -17,22 +17,18 @@ Node - v16.20.2
 
 ### For Android
 
-# using npm
  - open andoid emulator (I use - Pixel 3a_API 31_ arm64-v8a )
  - npm run android
 
 ### For iOS
 
-
-# using npm
  - open IOS emulator (I use - Iphone 14 (IOS:16.4))
-npm run ios
+ - npm run ios
 
 
 If everything is set up _correctly_, you should see your my test app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
 
 
 To learn more about React Native, take a look at the following resources:
