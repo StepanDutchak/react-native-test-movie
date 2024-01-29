@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "346684364275",
+    "project_id": "holywatertest-4dd6b",
+    "storage_bucket": "holywatertest-4dd6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346684364275:android:a72784c544ba9bdc3dae86",
+        "android_client_info": {
+          "package_name": "com.holywatertest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU9sDJ9Wygpv5jJZcIOva0LVQ1I0nz9cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

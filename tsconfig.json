@@ -3,6 +3,16 @@
   "compilerOptions": {
     "jsx": "react",
     "module": "commonjs",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "paths": {
+      "@components": ["components/index"],
+      "@constants": ["constants/index"],
+      "@screens": ["screens/index"],
+      "@icons": ["assets/icons/index"],
+      "@themes": ["themes/colors/index"],
+      "@types": ["types/index"],
+      "@fetch": ["fetch/index"]
+    }
   }
 }

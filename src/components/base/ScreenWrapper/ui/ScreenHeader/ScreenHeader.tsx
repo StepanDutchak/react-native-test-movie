@@ -1,16 +1,23 @@
 import React from 'react';
 import {styles} from './styles';
 import {Text, View} from 'react-native';
+import {SearchIcon} from '@icons';
 
-interface IMainHeader {
+interface IScreenHeader {
   title?: string;
-  subtitle?: string;
+  additionalHeaderIcon?: () => React.ReactNode;
+  // subtitle?: string;
 }
 
-const ScreenHeader = ({title, subtitle}: IMainHeader) => (
-  <View style={styles.headerContainer}>
-    <Text style={styles.titlePageStyle}>{title}</Text>
-    {subtitle && <Text style={styles.subtitlePageStyle}>{subtitle}</Text>}
+const ScreenHeader = ({title, additionalHeaderIcon}: IScreenHeader) => (
+  <View style={styles.container}>
+    <Text style={styles.headerTitle}>{title}</Text>
+    <View style={styles.rightContent}>
+      {additionalHeaderIcon && additionalHeaderIcon()}
+      <SearchIcon />
+    </View>
+
+    {/* {subtitle && <Text style={styles.subtitlePageStyle}>{subtitle}</Text>} */}
   </View>
 );
 

@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import themes from '../../../theme/colors';
+import themes from 'theme/colors';
 
 export const styles = StyleSheet.create({
   keyboardContainer: {
@@ -15,11 +15,8 @@ export const styles = StyleSheet.create({
   content: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: 16,
   },
-
   headerPageContainer: {
-    marginBottom: 20,
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',

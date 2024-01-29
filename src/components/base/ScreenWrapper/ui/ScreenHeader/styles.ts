@@ -1,15 +1,18 @@
 import {StyleSheet} from 'react-native';
+import {fonts} from '../../../../../theme/fonts';
 
 export const styles = StyleSheet.create({
-  headerContainer: {
-    flex: 1,
+  container: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    // backgroundColor: 'red',
   },
-  titlePageStyle: {
-    // ...fonts.h2Title,
-    textAlign: 'center',
+  headerTitle: {
+    ...fonts.h1Title,
   },
-  subtitlePageStyle: {
-    // ...fonts.textRegular14,
-    textAlign: 'center',
+  rightContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });
