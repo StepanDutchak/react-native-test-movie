@@ -17,14 +17,13 @@ Node - v16.20.2
 
 ### For Android
 
-```bash
 # using npm
  - open andoid emulator (I use - Pixel 3a_API 31_ arm64-v8a )
  - npm run android
 
 ### For iOS
 
-```bash
+
 # using npm
  - open IOS emulator (I use - Iphone 14 (IOS:16.4))
 npm run ios
@@ -44,5 +43,5 @@ To learn more about React Native, take a look at the following resources:
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 
-### For Android
+### Tested 
 
