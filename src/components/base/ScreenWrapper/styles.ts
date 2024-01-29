@@ -5,9 +5,7 @@ export const styles = StyleSheet.create({
   keyboardContainer: {
     flex: 1,
   },
-  contentContainer: {
-    // paddingBottom: 30,
-  },
+  contentContainer: {},
   container: {
     flex: 1,
     backgroundColor: themes.dark.BLACK,

@@ -1,7 +1,7 @@
 import React from 'react';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import {ScreenNavigationEnums} from '../../constants/enums/navigation';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {MainNavigationOptions} from '../../config/navigation';
 import {HomeScreen, LoadingScreen, PlayerScreen} from 'screens';
 

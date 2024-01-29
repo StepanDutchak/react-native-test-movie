@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
     },
     shadowOpacity: 9.5,
     shadowRadius: 8,
-    elevation: 10, // Adjust elevation for Android
+    elevation: 10,
   },
   title: {
     ...fonts.h2Title,

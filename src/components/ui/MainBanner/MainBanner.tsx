@@ -12,6 +12,7 @@ import {CarouselList} from 'components';
 import {IMovie} from '@types';
 
 import {styles} from './styles';
+import {getAll} from 'constants/fetch/fetchConfig';
 
 interface IItemCard {
   item: IMovie;
@@ -21,14 +22,14 @@ interface IMainBanner {
 }
 
 const MainBanner = ({containerStyle}: IMainBanner) => {
-  const movieByData = useSelector(selectMoviesByCategory('all'));
+  const movieByCategory = useSelector(selectMoviesByCategory(getAll));
 
   return (
     <View style={[styles.container, containerStyle]}>
       <CarouselList
         sliderWidth={GetWindowDimensions().width}
         itemWidth={GetWindowDimensions().width - 30}
-        listData={movieByData}
+        listData={movieByCategory}
         renderContent={({item}: IItemCard) => (
           <ContentCard contentData={item} />
         )}

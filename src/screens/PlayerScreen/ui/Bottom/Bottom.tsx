@@ -1,11 +1,14 @@
 import {AnimatedPress} from '@components';
 import React from 'react';
-import {styles} from './styles';
+import {View} from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+
 import LinearGradient from 'react-native-linear-gradient';
+
 import themes from 'theme/colors';
 import {PauseIcon, StartPlayIcon} from '@icons';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {View} from 'react-native';
+
+import {styles} from './styles';
 
 interface IBottom {
   isPlaying: boolean;

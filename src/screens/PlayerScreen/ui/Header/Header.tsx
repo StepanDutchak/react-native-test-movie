@@ -2,12 +2,12 @@ import {AnimatedPress} from '@components';
 import React from 'react';
 import {Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import themes from 'theme/colors';
 import {CloseIcon} from '@icons';
 
 import {styles} from './styles';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 interface IHeader {
   leftHandler: () => void;

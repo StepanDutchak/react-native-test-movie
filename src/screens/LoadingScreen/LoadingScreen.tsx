@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import {Animated} from 'react-native';
 import {SvgXml} from 'react-native-svg';
+import {useDispatch} from 'react-redux';
 
 import {ScreenNavigationEnums} from '../../constants/enums/navigation';
 
@@ -9,10 +10,10 @@ import {LoadingScreenNavigationProp} from '@types';
 
 import {StartIconXml} from '@icons';
 
-import {styles} from './styles';
 import {setMovie} from 'store/slices/movieSlice';
 import {fetchMovieData} from '@fetch';
-import {useDispatch} from 'react-redux';
+
+import {styles} from './styles';
 
 type ILoadingScreen = {
   navigation: LoadingScreenNavigationProp;

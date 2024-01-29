@@ -10,10 +10,11 @@ import Header from './ui/Header/Header';
 
 import {IEpisode} from 'types/store';
 
-import {styles} from './styles';
 import {PlayerScreenNavigationProp} from 'types/navigation';
 import {AppStateProvider} from 'context/AppState';
 import {AppStateProviderProp} from 'types/context';
+
+import {styles} from './styles';
 
 type IPlayerScreen = {
   navigation: PlayerScreenNavigationProp;

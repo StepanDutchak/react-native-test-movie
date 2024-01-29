@@ -6,7 +6,6 @@ import {SearchIcon} from '@icons';
 interface IScreenHeader {
   title?: string;
   additionalHeaderIcon?: () => React.ReactNode;
-  // subtitle?: string;
 }
 
 const ScreenHeader = ({title, additionalHeaderIcon}: IScreenHeader) => (
@@ -16,8 +15,6 @@ const ScreenHeader = ({title, additionalHeaderIcon}: IScreenHeader) => (
       {additionalHeaderIcon && additionalHeaderIcon()}
       <SearchIcon />
     </View>
-
-    {/* {subtitle && <Text style={styles.subtitlePageStyle}>{subtitle}</Text>} */}
   </View>
 );
 

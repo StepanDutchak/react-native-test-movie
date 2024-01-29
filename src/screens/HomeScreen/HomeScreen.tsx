@@ -10,16 +10,19 @@ import GiftImage from '../../assets/images/HeaderGift.png';
 
 import {CategoryBlock, ScreenWrapper, MainBanner} from '@components';
 
+import ContinueWatchBlock from 'components/ui/ContinueWatchBlock/ContinueWatchBlock';
+import storage from 'store/localStore/storage';
+
+import {StorageKeys} from 'types/AsyncStorageEnums';
+
+import {ScreenNavigationEnums} from 'constants/enums/navigation';
+import {AppStateProvider} from 'context/AppState';
+
+import {PlayerScreenNavigationProp} from 'types/navigation';
+import {AppStateProviderProp} from 'types/context';
 import {ICategories} from '@types';
 
 import {styles} from './styles';
-import ContinueWatchBlock from 'components/ui/ContinueWatchBlock/ContinueWatchBlock';
-import storage from 'store/localStore/storage';
-import {StorageKeys} from 'types/AsyncStorageEnums';
-import {ScreenNavigationEnums} from 'constants/enums/navigation';
-import {PlayerScreenNavigationProp} from 'types/navigation';
-import {AppStateProvider} from 'context/AppState';
-import {AppStateProviderProp} from 'types/context';
 
 interface IHomeScreen {
   navigation: PlayerScreenNavigationProp;
@@ -32,12 +35,14 @@ const HomeScreen = ({navigation}: IHomeScreen) => {
     AppStateProvider();
 
   const handleContinueWatching = useCallback(async () => {
-    const res = await storage.getItem(StorageKeys.lastEpisodeNumber);
-    const res2 = await storage.getItem(StorageKeys.movieLocalData);
+    const resLastEpisodeNumber = await storage.getItem(
+      StorageKeys.lastEpisodeNumber,
+    );
+    const resMovieLocalData = await storage.getItem(StorageKeys.movieLocalData);
 
     navigation.navigate(ScreenNavigationEnums.PLAYER_SCREEN, {
-      episodeData: JSON.parse(res2),
-      currentEpisode: res,
+      episodeData: JSON.parse(resMovieLocalData),
+      currentEpisode: resLastEpisodeNumber,
     });
   }, [navigation]);
 
