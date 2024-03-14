@@ -45,5 +45,4 @@ Mobile application was tested on
 - IOS(16.4) - Iphone 14/Iphone 14 pro Max
 - Android - Pixel 3a_API 31_ arm64-v8a
 
-# Note
-Also wanted to add, I found a very cool video player library for m3u8 format but it doesn't provide rewind video in the bottom bar, this functionality can be added to this library with patch-package, but it takes more time.
+
